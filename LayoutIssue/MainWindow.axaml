@@ -1,0 +1,15 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        x:Class="LayoutIssue.MainWindow"
+        Title="LayoutIssue">
+  <DockPanel Margin="20">
+      <StackPanel Orientation="Horizontal" Spacing="10" DockPanel.Dock="Top">
+        <CheckBox Name="mCheckbox1" DockPanel.Dock="Left" IsChecked="False">Some text1</CheckBox>
+        <CheckBox Name="mCheckbox2" DockPanel.Dock="Left" IsChecked="False">Some text2</CheckBox>
+      </StackPanel>
+      <StackPanel Name="mContentPanel" Height="200" Width="400" Background="Pink" IsVisible="False" />
+  </DockPanel>
+</Window>
